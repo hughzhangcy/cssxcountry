@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .pseudo-e p:last-child:after{
+                content: "\2744";
+            }
+            .pseudo-e-p:before{
+                content: '';
+                background: url(quote.png);
+                display: block;
+                height: 30px;
+                width: 30px;
+                position: absolute;
+                top: -5px;
+                left: -5px;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+             <p>Coffee? Hah! Our cocoa is far better.</p>
+             <p>Visit from 4-5 for cocoa happy hour!&#x2744;</p>
+        </article>
+        <article class="pseudo-e">
+             <p>Coffee? Hah! Our cocoa is far better.</p>
+             <p>Visit from 4-5 for cocoa happy hour!</p>
+        </article>
+        
+        <blockquote>
+             Coffee? Hah! Our cocoa is far better.
+            <span></span>
+        </blockquote>
+        <blockquote class="pseudo-e-p">
+             Coffee? Hah! Our cocoa is far better.
+        </blockquote>
+    </body>
+</html>
